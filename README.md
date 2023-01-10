@@ -1,0 +1,1 @@
+# net-console-app-project-template
