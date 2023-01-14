@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <PackageVersion>1.0</PackageVersion>
+        <PackageVersion>1.0.0.0</PackageVersion>
         <PackageId>Net.Templates.HostedConsoleApplication</PackageId>
         <Title>Hosted Console Application</Title>
         <Authors>Vladimir Bondarev</Authors>
@@ -15,6 +15,7 @@
         <ContentTargetFolders>content</ContentTargetFolders>
         <NoWarn>$(NoWarn);NU5128</NoWarn>
         <NoDefaultExcludes>true</NoDefaultExcludes>
+        <RepositoryUrl>https://github.com/vbondarev/net-console-app-project-template.git</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
