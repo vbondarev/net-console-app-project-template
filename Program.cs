@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Hosting;
 using Serilog;
 
-namespace HostedNetConsoleAppProjectTemplate;
+namespace HostedConsoleApplicationProjectTemplate;
 
 internal static class Program
 {
