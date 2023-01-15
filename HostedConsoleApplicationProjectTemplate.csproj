@@ -15,7 +15,7 @@
         <ContentTargetFolders>content</ContentTargetFolders>
         <NoWarn>$(NoWarn);NU5128</NoWarn>
         <NoDefaultExcludes>true</NoDefaultExcludes>
-        <RepositoryUrl>https://github.com/vbondarev/net-console-app-project-template.git</RepositoryUrl>
+        <RepositoryUrl>https://nuget.pkg.github.com/vbondarev/index.json</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
