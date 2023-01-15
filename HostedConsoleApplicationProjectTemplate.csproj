@@ -2,11 +2,11 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <PackageVersion>1.0.0.0</PackageVersion>
+        <PackageVersion>1.0.0</PackageVersion>
         <PackageId>Net.Templates.HostedConsoleApplication</PackageId>
         <Title>Hosted Console Application</Title>
         <Authors>Vladimir Bondarev</Authors>
-        <Description>A project for creating a command-line application that can run on .NET on Windows, Linux and macOS, and has an async Main method.</Description>
+        <Description>A project for creating a hosted command-line application that can run on .NET on Windows, Linux and macOS, and has an async Main method.</Description>
         <PackageTags>dotnet-new;templates;console;hosted</PackageTags>
         <TargetFramework>net6.0</TargetFramework>
 

@@ -3,7 +3,7 @@
     "author": "Vladimir Bondarev",
     "name": "Hosted Console Application",
     "description": "A project for creating a command-line application that can run on .NET on Windows, Linux and macOS, and has an async Main method.",
-    "classifications": [ "Common", "Console", "Hosted" ],
+    "classifications": [ "Common", "Console", "Hosted", "dotnet-new" ],
     "groupIdentity":"Net.Templates",
     "identity": "Net.Templates.HostedConsoleApplication",
     "shortName": "hosted-console-template",
