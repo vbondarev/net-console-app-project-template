@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageType>Template</PackageType>
+        <PackageVersion>1.0.0</PackageVersion>
+        <PackageId>Net.Templates.HostedConsoleApplication</PackageId>
+        <Title>Hosted Console Application</Title>
+        <Authors>Vladimir Bondarev</Authors>
+        <Description>A project for creating a hosted command-line application that can run on .NET on Windows, Linux and macOS, and has an async Main method.</Description>
+        <PackageTags>dotnet-new;templates;console;hosted</PackageTags>
+        <TargetFramework>net6.0</TargetFramework>
+
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <NoWarn>$(NoWarn);NU5128</NoWarn>
+        <NoDefaultExcludes>true</NoDefaultExcludes>
+        <RepositoryUrl>https://github.com/vbondarev/net-console-app-project-template.git</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+      <PackageReference Include="Serilog" Version="2.12.0" />
+      <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
+      <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
+      <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+      <PackageReference Include="Serilog.Settings.Configuration" Version="3.4.0" />
+      <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="appsettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+      <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
