@@ -24,7 +24,5 @@ jobs:
       - run: dotnet build --configuration Release HostedConsoleApplicationProjectTemplate.csproj
       - name: Create the package
         run: dotnet pack --configuration Release HostedConsoleApplicationProjectTemplate.csproj
-      - name: Files
-      - run: ls
       - name: Publish the package to GPR
-        run: dotnet nuget push HostedConsoleApplicationProjectTemplate/bin/Release/*.nupkg
+        run: dotnet nuget push /bin/Release/*.nupkg
