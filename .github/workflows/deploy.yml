@@ -1,7 +1,9 @@
 name: Upload dotnet package
+
 on:
   release:
     types: [created]
+    
 jobs:
   deploy:
     runs-on: ubuntu-latest
