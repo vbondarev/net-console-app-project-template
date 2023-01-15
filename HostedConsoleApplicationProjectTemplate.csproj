@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>1.0.1</PackageVersion>
         <PackageId>Net.Templates.HostedConsoleApplication</PackageId>
         <Title>Hosted Console Application</Title>
         <Authors>Vladimir Bondarev</Authors>
