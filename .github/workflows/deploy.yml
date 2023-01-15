@@ -25,4 +25,4 @@ jobs:
       - name: Create the package
         run: dotnet pack --configuration Release --output nupkg HostedConsoleApplicationProjectTemplate.csproj
       - name: Publish the package to GPR
-        run: dotnet nuget push nupkg/*.nupkg
+        run: dotnet nuget push nupkg/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }}
