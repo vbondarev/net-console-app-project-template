@@ -23,6 +23,6 @@ jobs:
           NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - run: dotnet build --configuration Release HostedConsoleApplicationProjectTemplate.csproj
       - name: Create the package
-        run: dotnet pack --configuration Release HostedConsoleApplicationProjectTemplate.csproj
+        run: dotnet pack --configuration Release --output nupkg HostedConsoleApplicationProjectTemplate.csproj
       - name: Publish the package to GPR
-        run: dotnet nuget push HostedConsoleApplicationProjectTemplate/bin/Release/*.nupkg
+        run: dotnet nuget push --source nupkg/*.nupkg 
